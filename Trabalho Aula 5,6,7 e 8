@@ -1,0 +1,93 @@
+Responda com suas próprias palavras:
+1. O Manifesto Ágil diz que os itens da direita "ainda têm valor". Em que situação a documentação formal pode ser tão importante quanto o software funcionando?
+
+2. Qual princípio ágil você acha mais difícil de aplicar em um projeto acadêmico com prazos fixos?
+
+3. "Simplicidade, maximizar o trabalho não realizado" parece contraintuitivo. O que isso significa na prática?
+
+4. Elaborar um princípio do Manifesto Ágil. Explicar com suas próprias palavras e um exemplo prático, o que aquele princípio significa.
+
+5. Por que XP valoriza tanto "coragem" como um valor de engenharia, e não apenas uma característica pessoal?
+
+6. Scrum e Kanban resolvem o mesmo problema (organizar o trabalho) de formas diferentes. Em que tipo de projeto o Kanban seria melhor que o Scrum?
+
+7. Se o Product Owner e o Scrum Master tivessem os papéis invertidos, o que poderia dar errado?
+
+8. Montar um quadro Kanban e anexar na atividade, sobre uma lista fictícia de 6 tarefas de um "app de tarefas" (login, cadastro de tarefas, notificações, tema escuro, sincronização em nuvem, relatório). Montar um quadro Kanban simples (A Fazer / Fazendo / Feito) no quadro ou em papel, e definam um limite de WIP razoável para a coluna "Fazendo".
+
+9. Se testar não prova a ausência de erros, como decidir "quando parar" de testar um sistema?
+
+10. O erro do Ariane 5 veio de um código reaproveitado de outro foguete. O que isso ensina sobre testar código legado em um novo contexto?
+
+11. Por que o teste de aceitação, mesmo sendo o mais "amplo", não substitui os testes unitários e de integração?
+
+12. Apresente um caso de teste, onde irá testar uma função que classifica idade em "criança" (0-11), "adolescente" (12-17) ou "adulto" (18+). Escrever pelo menos 5 casos de teste cobrindo valores normais e de fronteira (11, 12, 17, 18).
+
+13. O Bug do Milênio nasceu de uma decisão que fazia sentido nos anos 1960-70. Que decisões de hoje podem parecer um erro parecido daqui a 30 anos?
+
+14. Qual a diferença entre manutenção evolutiva (adicionar funcionalidade) e evolução do software como conceito mais amplo?
+
+15. Por que a gerência de configuração se torna mais crítica quanto maior é a equipe de desenvolvimento?
+
+16. Classificar 4 situações fictícias de manutenção:
+(1) corrigir erro de cálculo na folha de pagamento;
+(2) adaptar o sistema para a nova versão do Android;
+(3) adicionar exportação de relatórios em PDF;
+(4) reorganizar o código para facilitar alterações futuras.
+
+Resposta: 
+
+1.
+A documentação formal pode ser tão importante quanto o software funcionando em projetos com forte exigência legal por exemplo, sistemas médicos, aeroespaciais, bancários ou contratos públicos, onde é preciso comprovar rastreabilidade, auditoria ou confiabilidade com normas. Também é essencial quando o sistema será mantido por outra equipe no futuro, ou quando há troca constante de desenvolvedores, pois sem documentação o conhecimento se perde.
+
+2. 
+O mais difícil costuma ser responder a mudanças mais que seguir um plano, porque em trabalhos de faculdade os prazos são fixos e não dá para simplesmente estender o cronograma quando surgem mudanças de requisito. Isso obriga a equipe a negociar entre adaptar o projeto e manter a data de entrega, o que é uma tensão constante.
+
+3. 
+Significa fazer só o que realmente é necessário para entregar valor, evitando construir funcionalidades, documentações ou processos "por precaução" que talvez nunca sejam usados. Na prática, é preferir uma solução simples que resolve o problema agora a uma solução complexa e genérica pensando em cenários futuros incertos — economizando tempo e reduzindo a chance de erro.
+
+4. 
+Princípio escolhido: "Entregar software funcionando com frequência, em ciclos curtos".
+Isso significa que, em vez de esperar meses para entregar tudo de uma vez, a equipe deve gerar versões utilizáveis do sistema em intervalos curtos (semanas), permitindo que o cliente veja progresso real e dê feedback cedo.
+Exemplo prático: em um app de delivery, ao invés de esperar 6 meses para lançar o sistema completo, a equipe entrega primeiro só o cadastro de restaurantes funcionando, depois o carrinho de compras, depois o pagamento — cada entrega já é usável e testável pelo cliente.
+
+5. 
+Porque na prática de XP, "coragem" não é só uma virtude pessoal, mas uma atitude técnica necessária para tomar decisões difíceis de engenharia: refatorar código legado, excluir código ruim, admitir que uma solução não está funcionando e recomeçar, ou dizer ao cliente que um prazo é inviável. Sem essa coragem, o time tende a acumular gambiarras e dívida técnica só para "não mexer no que está funcionando", o que piora a qualidade a longo prazo.
+
+6.
+O Kanban tende a ser melhor em projetos de fluxo contínuo, sem entregas fechadas em ciclos — por exemplo, times de suporte, manutenção de sistemas em produção ou operações de TI, onde as tarefas chegam de forma imprevisível e precisam ser tratadas assim que surgem, sem esperar o início de uma "sprint". O Scrum funciona melhor quando dá para planejar blocos de trabalho com objetivo definido por período.
+
+7.
+Se os papéis fossem invertidos, o Scrum Master passaria a definir prioridades de negócio sem ter contato direto com o cliente, correndo o risco de tomar decisões desalinhadas com o valor esperado. Já o Product Owner, atuando como Scrum Master, focaria em processo e não teria autoridade ou visão de negócio para priorizar o backlog corretamente. O resultado provável seria um time sem direção clara de prioridades e com processos mal conduzidos.
+
+8.
+Imagem Anexado
+  
+
+9.
+Como é impossível provar que não existem mais erros, a decisão de parar costuma se basear em critérios práticos: cobertura de testes atingida, taxa de bugs encontrados caindo a cada nova rodada de testes, todos os casos críticos e de fronteira testados, prazo/orçamento do projeto, e nível de risco aceitável para o negócio. Ou seja, para quando o risco residual é considerado aceitável, não quando há certeza total de ausência de erros.
+
+10.
+Ensina que código legado não pode ser reaproveitado "às cegas", mesmo que tenha funcionado bem em outro contexto. É preciso reavaliar todas as suposições originais (faixas de valores esperados, hardware, ambiente de execução) porque o novo sistema pode operar em condições diferentes das que o código foi projetado para suportar. Reuso de código exige novos testes específicos para o novo contexto, não apenas confiança no histórico anterior.
+
+11.
+Porque o teste de aceitação verifica se o sistema atende às expectativas do usuário/negócio em um nível macro, mas não é capaz de detectar erros internos específicos, como falhas de lógica dentro de uma função ou problemas na comunicação entre dois módulos específicos. Testes unitários garantem que cada parte pequena funciona isoladamente, e testes de integração garantem que as partes se comunicam corretamente — problemas nesses níveis podem não aparecer nos testes de aceitação, que testam cenários mais gerais de uso.
+
+12.
+Imagem anexada 
+
+13. Algumas decisões atuais que podem parecer erros daqui a 30 anos: usar datas com apenas 4 dígitos de ano pode não bastar para sistemas que rodem além do ano 9999 (exagero, mas ilustra o padrão); armazenar identificadores como inteiros de 32 bits, que podem estourar com o crescimento de dados; ou depender de formatos e protocolos atuais de IA/dados sem pensar em compatibilidade futura. Em geral, qualquer decisão tomada porque economiza espaço hoje e que assume limites que parecem distantes pode se repetir.
+
+14.
+Manutenção evolutiva é uma categoria específica de manutenção, focada em adicionar novas funcionalidades ao sistema já existente, atendendo a novos requisitos do negócio. Já "evolução do software" como conceito mais amplo inclui isso, mas também abrange todas as formas como o sistema muda ao longo do tempo: correções de erro, adaptações ao ambiente, melhorias internas de qualidade (refatoração), e até mudanças de arquitetura — ou seja, evolução é o processo contínuo e mais geral, enquanto manutenção evolutiva é um tipo específico dentro dele.
+
+15.
+Porque, com mais desenvolvedores trabalhando ao mesmo tempo no mesmo código, aumenta muito a chance de conflitos: duas pessoas alterando o mesmo arquivo, versões diferentes sendo usadas por engano, ou funcionalidades sendo sobrescritas sem querer. A gerência de configuração (controle de versão, branches, releases, controle de dependências) garante que todos trabalhem de forma organizada, sabendo exatamente qual versão está em produção e evitando retrabalho ou perda de código.
+
+16.
+Classificação das situações:
+
+(1) Corrigir erro de cálculo na folha de pagamento → Manutenção corretiva 
+(2) Adaptar o sistema para a nova versão do Android → Manutenção adaptativa 
+(3) Adicionar exportação de relatórios em PDF → Manutenção evolutiva/perfectiva 
+(4) Reorganizar o código para facilitar alterações futuras → Manutenção preventiva
