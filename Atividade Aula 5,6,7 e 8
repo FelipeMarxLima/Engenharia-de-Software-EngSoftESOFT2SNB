@@ -58,14 +58,14 @@ Porque na prática de XP, "coragem" não é só uma virtude pessoal, mas uma ati
 O Kanban tende a ser melhor em projetos de fluxo contínuo, sem entregas fechadas em ciclos — por exemplo, times de suporte, manutenção de sistemas em produção ou operações de TI, onde as tarefas chegam de forma imprevisível e precisam ser tratadas assim que surgem, sem esperar o início de uma "sprint". O Scrum funciona melhor quando dá para planejar blocos de trabalho com objetivo definido por período.
 
 7.
-Se os papéis fossem invertidos, o Scrum Master (que deveria proteger o processo e remover impedimentos) passaria a definir prioridades de negócio sem ter contato direto com o cliente, correndo o risco de tomar decisões desalinhadas com o valor esperado. Já o Product Owner, atuando como Scrum Master, focaria em processo e não teria autoridade ou visão de negócio para priorizar o backlog corretamente. O resultado provável seria um time sem direção clara de prioridades e com processos mal conduzidos.
+Se os papéis fossem invertidos, o Scrum Master passaria a definir prioridades de negócio sem ter contato direto com o cliente, correndo o risco de tomar decisões desalinhadas com o valor esperado. Já o Product Owner, atuando como Scrum Master, focaria em processo e não teria autoridade ou visão de negócio para priorizar o backlog corretamente. O resultado provável seria um time sem direção clara de prioridades e com processos mal conduzidos.
 
 8.
 Imagem Anexado
   
 
 9.
-Como é impossível provar que não existem mais erros, a decisão de parar costuma se basear em critérios práticos: cobertura de testes atingida (ex: 80-90% do código coberto), taxa de bugs encontrados caindo a cada nova rodada de testes, todos os casos críticos e de fronteira testados, prazo/orçamento do projeto, e nível de risco aceitável para o negócio. Ou seja, para-se quando o risco residual é considerado aceitável, não quando há certeza total de ausência de erros.
+Como é impossível provar que não existem mais erros, a decisão de parar costuma se basear em critérios práticos: cobertura de testes atingida, taxa de bugs encontrados caindo a cada nova rodada de testes, todos os casos críticos e de fronteira testados, prazo/orçamento do projeto, e nível de risco aceitável para o negócio. Ou seja, para quando o risco residual é considerado aceitável, não quando há certeza total de ausência de erros.
 
 10.
 Ensina que código legado não pode ser reaproveitado "às cegas", mesmo que tenha funcionado bem em outro contexto. É preciso reavaliar todas as suposições originais (faixas de valores esperados, hardware, ambiente de execução) porque o novo sistema pode operar em condições diferentes das que o código foi projetado para suportar. Reuso de código exige novos testes específicos para o novo contexto, não apenas confiança no histórico anterior.
@@ -76,7 +76,7 @@ Porque o teste de aceitação verifica se o sistema atende às expectativas do u
 12.
 Função: classificar idade em "criança" (0-11), "adolescente" (12-17), "adulto" (18+)
 
-#	Entrada	Resultado esperado	Tipo de caso
+Entrada	Resultado esperado	Tipo de caso
 1	5	criança	Valor normal (criança)
 2	11	criança	Fronteira superior de "criança"
 3	12	adolescente	Fronteira inferior de "adolescente"
@@ -94,7 +94,7 @@ Porque, com mais desenvolvedores trabalhando ao mesmo tempo no mesmo código, au
 16.
 Classificação das situações:
 
-(1) Corrigir erro de cálculo na folha de pagamento → Manutenção corretiva (corrige um defeito existente no sistema).
-(2) Adaptar o sistema para a nova versão do Android → Manutenção adaptativa (ajusta o sistema a mudanças no ambiente externo).
-(3) Adicionar exportação de relatórios em PDF → Manutenção evolutiva/perfectiva (adiciona nova funcionalidade solicitada pelo usuário).
-(4) Reorganizar o código para facilitar alterações futuras → Manutenção preventiva (melhora a estrutura interna sem alterar o comportamento externo, visando facilitar manutenções futuras).
+(1) Corrigir erro de cálculo na folha de pagamento → Manutenção corretiva 
+(2) Adaptar o sistema para a nova versão do Android → Manutenção adaptativa 
+(3) Adicionar exportação de relatórios em PDF → Manutenção evolutiva/perfectiva 
+(4) Reorganizar o código para facilitar alterações futuras → Manutenção preventiva
