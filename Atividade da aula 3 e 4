@@ -1,0 +1,30 @@
+Responda com suas próprias palavras:
+
+1. Por que um modelo tão rígido quanto o Cascata ainda é usado em alguns contextos hoje? 
+
+2. O modelo Incremental reduz o risco de atraso, mas cria que tipo de risco novo (dica: visão do todo do sistema)? 
+
+3. Por que o modelo Espiral, apesar de mais caro, é preferido em projetos como softwares aeroespaciais ou de saúde?
+
+2. Apresente 3 cenários de projeto: (1) site institucional simples; (2) app de rifas online; (3) software de controle de tráfego aéreo. Indicar qual modelo de processo usaria em cada um, justificando a escolha.
+
+Resposta:
+1.
+
+Porque, quando os requisitos são claros e não vão mudar, o Cascata é simples de planejar, orçar e controlar. Funciona bem em projetos formais, com contratos fechados e documentação exigida.
+
+2.
+
+Ele cria o risco de perder a visão do sistema como um todo. Como cada parte é feita separadamente, as peças podem não se encaixar bem depois, gerando problemas de integração.
+
+3.
+
+Porque são sistemas onde um erro pode custar vidas. O Espiral analisa riscos em cada etapa, evitando falhas graves. Custa mais, mas evita prejuízos muito maiores.
+
+4.
+
+Site institucional simples → Cascata. O projeto é pequeno e os requisitos (páginas, textos, contato) dificilmente mudam durante o desenvolvimento. Não precisa de ciclos de revisão nem de análise de risco, então um processo direto já resolve.
+
+App de rifas online → Incremental. Dá para lançar uma versão inicial com o essencial (criar rifa e vender números) e depois ir adicionando funções como pagamento online e sorteio automático. Isso permite colocar o app no ar mais rápido e ajustar conforme o uso real dos clientes.
+
+Software de controle de tráfego aéreo → Espiral. É um sistema onde uma falha pode colocar vidas em risco, então cada etapa do desenvolvimento precisa passar por uma análise cuidadosa de riscos antes de avançar. O custo maior do processo compensa pela segurança que ele garante.
